@@ -1,0 +1,87 @@
+{
+    "name": "misato-milling-gcode-snippet",
+    "displayName": "CNC Milling G-Code Snippet(銑床繁體中文)",
+    "description": "CNC Snippet",
+    "version": "0.3.3",
+    "license": "MIT",
+    "publisher": "ehosei",
+    "author": {
+        "name": "Shih Yu Chung",
+        "url": "https://www.ehosei.com"
+    },
+    "engines": {
+        "vscode": "^1.30.2"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/syzlmr/milling-gcode-snippet.git"
+    },
+    "homepage": "https://www.ehosei.com",
+    "icon": "images/logo.png",
+    "contributes": {
+        "languages": [
+            {
+                "id": "gcode",
+                "aliases": [
+                    "gcode",
+                    "GCODE",
+                    "nc",
+                    "syntax",
+                    "highlighter",
+                    "language"
+                ],
+                "extensions": [
+                    ".nc",
+                    ".gcode",
+                    ".tap",
+                    ".cls",
+                    ".apt",
+                    ".mpt",
+                    ".fnc",
+                    ".gc",
+                    ".dnc",
+                    ".cnc",
+                    ".ncf",
+                    ".ncc",
+                    ".maz",
+                    ".hnc",
+                    ".knc",
+                    ".g00",
+                    ".eia"
+                ],
+                "configuration": "./language/gcode-language.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gcode",
+                "scopeName": "source.gcode",
+                "path": "./syntaxes/gcode.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "gcode",
+                "path": "./snippets/gcode-snippets.json"
+            },
+            {
+                "language": "gcode",
+                "path": "./snippets/mcode-snippets.json"
+            },
+            {
+                "language": "gcode",
+                "path": "./snippets/general-snippets.json"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "G-Code",
+            "properties": {}
+        }
+    }
+}

@@ -1,0 +1,185 @@
+{
+    "scopeName": "source.gcode",
+    "name": "CNC Milling G-Code Snippet",
+    "patterns": [
+        {
+            "include": "#warnning"
+        },
+        {
+            "include": "#speedsfeeds"
+        },
+        {
+            "include": "#prognumbers"
+        },
+        {
+            "include": "#coords"
+        },
+        {
+            "include": "#tools"
+        },
+        {
+            "include": "#modifiers"
+        },
+        {
+            "include": "#macrovars"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#operators"
+        }
+    ],
+    "repository": {
+        "warnning": {
+            "patterns": [
+                {
+                    "name": "keyword.control.gcode",
+                    "match": "(G00)|(G54)|(G55)|(G56)|(G57)|(G58)|(G59)"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "match": "\\b[gG][0-9]{1,3}",
+                    "name": "markup.bold.gcode"
+                },
+                {
+                    "match": "\\b[mM][0-9]{1,3}",
+                    "name": "support.constant.math.gcode"
+                },
+                {
+                    "match": "([\\%])",
+                    "name": "string.gcode"
+                },
+                {
+                    "match": "(GOTO)|(IF)|(EQ)|(NE)|(LT)|(GT)|(LE)|(GE)|(DO)|(WHILE)|(END)|(AND)|(OR)|(XOR)",
+                    "name": "support.constant.math.gcode"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "match": "(SIN)|(COS)|(TAN)|(ASIN)|(ACOS)|(ATAN)|(LN)|(SQRT)|(MOD)|(EXP)",
+                    "name": "support.constant.math.gcode"
+                },
+                {
+                    "match": "(FIX)|(FUP)|(ROUND)|(ABS)",
+                    "name": "support.constant.math.gcode"
+                },
+                {
+                    "match": "(\\+)|(\\*)|(\\/)|(\\*\\*)",
+                    "name": "support.constant.math.gcode"
+                },
+                {
+                    "match": "(\\-)",
+                    "name": "keyword.control.gcode"
+                }
+            ]
+        },
+        "speedsfeeds": {
+            "patterns": [
+                {
+                    "match": "\\b[sS][+-]?\\d+[.]?\\d*",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "\\b[fF][+-]?\\d+[.]?\\d*",
+                    "name": "keyword.control.gcode"
+                }
+            ]
+        },
+        "prognumbers": {
+            "patterns": [
+                {
+                    "match": "\\b[pP][0-9]{1,5}",
+                    "name": "string.regexp.gcode"
+                }
+            ]
+        },
+        "coords": {
+            "patterns": [
+                {
+                    "match": "\\b[xX][+-]?\\d+[.]\\d*",
+                    "name": "string.gcode"
+                },
+                {
+                    "match": "\\b[xX][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[yY][+-]?\\d+[.]\\d*",
+                    "name": "string.gcode"
+                },
+                {
+                    "match": "\\b[yY][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[zZ][+-]?\\d+[.]\\d*",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "\\b[zZ][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[aAbBcCuUvVwWrR][+-]?\\d+[.]\\d*",
+                    "name": "constant.character.escape.gcode"
+                },
+                {
+                    "match": "\\b[aAbBcCuUvVwWrR][+-]?\\d+",
+                    "name": "invalid.gcode"
+                }
+            ]
+        },
+        "tools": {
+            "patterns": [
+                {
+                    "match": "\\b[dD]\\d+",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "\\b[hH]\\d+",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "\\b[tT]\\d+",
+                    "name": "keyword.control.gcode"
+                }
+            ]
+        },
+        "modifiers": {
+            "patterns": [
+                {
+                    "match": "\\b[iIjJkK][+-]?\\d+[.]\\d*",
+                    "name": "constant.character.escape.gcode"
+                },
+                {
+                    "match": "\\b[iIjJkK][+-]?\\d+",
+                    "name": "invalid.gcode"
+                },
+                {
+                    "match": "\\b[qQlL][+-]?\\d+[.]?\\d*",
+                    "name": "support.constant.math.gcode"
+                }
+            ]
+        },
+        "macrovars": {
+            "patterns": [
+                {
+                    "match": "[#][0-9]+",
+                    "name": "keyword.control.gcode"
+                },
+                {
+                    "match": "#[\\[]#?\\d+\\.?\\d*([+-]#?\\d*\\.?\\d*)*[\\]]",
+                    "name": "keyword.control.gcode"
+                }
+
+            ]
+        }
+    }
+
+}

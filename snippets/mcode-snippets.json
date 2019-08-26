@@ -1,0 +1,182 @@
+{
+    "M00-程式停止": {
+        "prefix": "m00-程式停止",
+        "scope": "gcode",
+        "body": [
+            "M00;"
+        ],
+        "description": [
+            "M00",
+            "程式停止",
+            "再次按下程式執行鍵可繼續"
+        ]
+    },
+    "M01-選擇性停止": {
+        "prefix": "m01-選擇性停止",
+        "scope": "gcode",
+        "body": [
+            "M01"
+        ],
+        "description": [
+            "M01;",
+            "選擇性停止",
+            "面板需先按選擇性停止才會作用"
+        ]
+    },
+    "M02-程式結束": {
+        "prefix": "m02-程式結束",
+        "scope": "gcode",
+        "body": [
+            "M02"
+        ],
+        "description": [
+            "M02;",
+            "程式結束",
+            "游標不會回到最上方"
+        ]
+    },
+    "M03-主軸正轉": {
+        "prefix": "m03-主軸正轉",
+        "scope": "gcode",
+        "body": [
+            "M03 S${1:[轉速]};"
+        ],
+        "description": [
+            "M03",
+            "主軸正轉"
+        ]
+    },
+    "M04-主軸反轉": {
+        "prefix": "m04-主軸反轉",
+        "scope": "gcode",
+        "body": [
+            "M04 S${1:[轉速]};"
+        ],
+        "description": [
+            "M04",
+            "主軸反轉"
+        ]
+    },
+    "M05-主軸停止": {
+        "prefix": "m05-主軸停止",
+        "scope": "gcode",
+        "body": [
+            "M05"
+        ],
+        "description": [
+            "M05;",
+            "主軸停止"
+        ]
+    },
+    "M06-自動換刀": {
+        "prefix": "m06-自動換刀",
+        "scope": "gcode",
+        "body": [
+            "M06 T${1:[刀號]};"
+        ],
+        "description": [
+            "M06;",
+            "自動換刀"
+        ]
+    },
+    "M08-切削水開": {
+        "prefix": "m08-切削水開",
+        "scope": "gcode",
+        "body": [
+            "M08"
+        ],
+        "description": [
+            "M08;",
+            "切削水開"
+        ]
+    },
+    "M09-切削水關": {
+        "prefix": "m09-切削水關",
+        "scope": "gcode",
+        "body": [
+            "M09"
+        ],
+        "description": [
+            "M09;",
+            "切削水關"
+        ]
+    },
+    "M19-主軸定位": {
+        "prefix": "m19-主軸定位",
+        "scope": "gcode",
+        "body": [
+            "M19"
+        ],
+        "description": [
+            "M19;",
+            "主軸定位"
+        ]
+    },
+    "M20-主軸定位解除": {
+        "prefix": "m20-主軸定位解除",
+        "scope": "gcode",
+        "body": [
+            "M20"
+        ],
+        "description": [
+            "M20;",
+            "主軸定位解除"
+        ]
+    },
+    "M28-取消剛性攻牙": {
+        "prefix": "m28-取消剛性攻牙",
+        "scope": "gcode",
+        "body": [
+            "M28"
+        ],
+        "description": [
+            "M28;",
+            "取消剛性攻牙"
+        ]
+    },
+    "M29-開啟剛性攻牙": {
+        "prefix": "m29-開啟剛性攻牙",
+        "scope": "gcode",
+        "body": [
+            "M29"
+        ],
+        "description": [
+            "M29;",
+            "開啟剛性攻牙"
+        ]
+    },
+    "M30-程式結束": {
+        "prefix": "m30-程式結束",
+        "scope": "gcode",
+        "body": [
+            "M30;"
+        ],
+        "description": [
+            "M30",
+            "程式結束",
+            "游標回到最上方"
+        ]
+    },
+    "M98-呼叫副程式": {
+        "prefix": "m98-呼叫副程式",
+        "scope": "gcode",
+        "body": [
+            "M98 P${1:[副程式號]} L${1:[呼叫次數]};"
+        ],
+        "description": [
+            "M98",
+            "呼叫副程式"
+        ]
+    },
+    "M99-副程式返回": {
+        "prefix": "m99-副程式返回",
+        "scope": "gcode",
+        "body": [
+            "M99;"
+        ],
+        "description": [
+            "M99",
+            "副程式返回"
+        ]
+    }
+}
