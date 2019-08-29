@@ -1,6 +1,6 @@
 ![Screenshot](https://raw.githubusercontent.com/syzlmr/milling-gcode-snippet/master/images/gcode.gif)
 
-## 特徵
+## このエクステンションの特徵
 
 1. このエクステンションはCNCフライス盤のGコード高速入力とさまざまなGコードパラメータ記述機能を提供します。
 2. このエクステンションは、X、Y、Z、A、B、C、U、V、W軸の小数点検査機能が付いています。
