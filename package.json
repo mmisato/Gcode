@@ -1,13 +1,12 @@
 {
     "name": "misato-milling-gcode-snippet",
-    "displayName": "CNC Milling G-Code Snippet(銑床繁體中文)",
+    "displayName": "CNC Milling G-Code Snippet(Gコード日本語版)",
     "description": "CNC Snippet",
     "version": "0.3.3",
     "license": "MIT",
     "publisher": "ehosei",
     "author": {
-        "name": "Shih Yu Chung",
-        "url": "https://www.ehosei.com"
+        "name": "Matsumoto Misato"
     },
     "engines": {
         "vscode": "^1.30.2"
@@ -19,9 +18,8 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/syzlmr/milling-gcode-snippet.git"
+        "url": "https://github.com/mmisato/Gcode.git"
     },
-    "homepage": "https://www.ehosei.com",
     "icon": "images/logo.png",
     "contributes": {
         "languages": [
