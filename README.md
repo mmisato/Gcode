@@ -41,4 +41,5 @@ g00~g99| 插入G碼(g需為小寫)。輸入g後未按Enter確定前，會出現�
 
 ## License
 
-松本明諭はこの[MIT License](https://opensource.org/licenses/MIT)を守って、無料で配布しています。
+松本　明諭のこのエクステンションは[MIT License](https://opensource.org/licenses/MIT)を守って、無料で配布しています。
+

@@ -2,7 +2,7 @@
     "name": "misato-milling-gcode-snippet",
     "displayName": "CNC Milling G-Code Snippet(Gコード日本語版)",
     "description": "CNC Snippet",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "license": "MIT",
     "publisher": "Misato",
     "author": {
