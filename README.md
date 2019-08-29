@@ -41,4 +41,4 @@ g00~g99| 插入G碼(g需為小寫)。輸入g後未按Enter確定前，會出現�
 
 ## License
 
-永豐成有限公司遵從 [MIT License](https://opensource.org/licenses/MIT)規範，開放此套件免費使用於任何個人及商業用途。
+松本明諭はこの[MIT License](https://opensource.org/licenses/MIT)を守って、無料で配布しています。
